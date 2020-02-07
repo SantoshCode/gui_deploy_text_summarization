@@ -8,14 +8,6 @@ from tkinter import ttk
 from tkinter.scrolledtext import *
 import tkinter.filedialog
 
-# NLP Pkgs
-# from spacy_summarization import text_summarizer
-# from gensim.summarization import summarize
-# from nltk_summarization import nltk_summarizer
-
-# Web Scraping Pkg
-# from bs4 import BeautifulSoup
-# from urllib.request import urlopen
 
  # Structure and Layout
 window = Tk()
@@ -197,7 +189,7 @@ tab4_display.grid(row=7,column=0, columnspan=3,padx=5,pady=5)
 
 
 # About TAB
-about_label = Label(tab5,text="Summaryzer GUI V.0.0.1 \n Jesus saves @JCharisTech",pady=5,padx=5)
+about_label = Label(tab5,text="Summaryzer GUI V.0.0.1 \n by Student of Kathmamdu University \n Department of Computer Engineering",pady=5,padx=5)
 about_label.grid(column=0,row=1)
 
 window.mainloop()
