@@ -2,5 +2,5 @@
 
 ![alt text](gui_deploy_result.png)
 
-<iframe width="420" height="315"
-	src="https://www.youtube.com/embed/xUn74opRswc" > </iframe>
+
+[![](http://img.youtube.com/vi/xUn74opRswc/0.jpg)](http://www.youtube.com/watch?v=xUn74opRswc "")
