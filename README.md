@@ -3,4 +3,4 @@
 ![alt text](gui_deploy_result.png)
 
 <iframe width="420" height="315"
-	src="https://www.youtube.com/embed/xUn74opRswc"/>
+	src="https://www.youtube.com/embed/xUn74opRswc" />
