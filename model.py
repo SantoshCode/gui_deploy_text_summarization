@@ -7,7 +7,7 @@ from tensorflow.python.layers.core import Dense
 from tensorflow.python.ops.rnn_cell_impl import _zero_state_tensors
 ################################################
 
-reviews = pd.read_csv('/home/santosh/projects/gui_deploy/Reviews.csv')
+reviews = pd.read_csv('/home/sant/projects/gui_deploy/Reviews.csv')
 
 ##################################################
 
@@ -104,7 +104,7 @@ print("Size of Vocabulary:", len(word_counts))
 #/content/drive/My Drive/glove.840B.300d.txt
 #or /content/drive/My Drive/numberbatch-en.txt
 embeddings_index = {}
-with open('/home/santosh/projects/gui_deploy/numberbatch-en.txt', encoding='utf-8') as f:
+with open('/home/sant/projects/gui_deploy/numberbatch-en.txt', encoding='utf-8') as f:
     for line in f:
         values = line.split(' ')
         word = values[0]
@@ -238,18 +238,6 @@ print("Texts:")
 print(lengths_texts.describe())
 
 #######################################################
-
-# Inspect the length of texts
-print(np.percentile(lengths_texts.counts, 90))
-print(np.percentile(lengths_texts.counts, 95))
-print(np.percentile(lengths_texts.counts, 99))
-
-
-
-# Inspect the length of summaries
-print(np.percentile(lengths_summaries.counts, 90))
-print(np.percentile(lengths_summaries.counts, 95))
-print(np.percentile(lengths_summaries.counts, 99))
 
 ##############################################################
 

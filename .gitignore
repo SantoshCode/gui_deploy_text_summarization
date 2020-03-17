@@ -1,7 +1,6 @@
 __pycache__
 tf_deploy_env
-trianed model v7
+latest_trained_model
+pro-gui
 Reviews.csv
-nltk_summarization.py
 numberbatch-en.txt
-spacy_summarization.py

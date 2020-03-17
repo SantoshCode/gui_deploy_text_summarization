@@ -1,6 +1,20 @@
 from model import *
 
 def summarize(text):
+
+
+    checkpoint = "/home/sant/projects/gui_deploy/latest_trained_model/best_model.ckpt" 
+
+    loaded_graph = tf.Graph()
+    with tf.Session(graph=loaded_graph) as sess:
+        # Load saved model
+        loader = tf.train.import_meta_graph(checkpoint + '.meta')
+        loader.restore(sess, checkpoint)
+        names = []
+        [names.append(n.name) for n in loaded_graph.as_graph_def().node]
+    names
+
+
     #/content/drive/My Drive/trained model v1/trained model v2/best_model.ckpt
 # Create your own review or use one from the dataset
     input_sentence = text
@@ -9,8 +23,10 @@ def summarize(text):
 #input_sentence = clean_texts[random]
 #text = text_to_seq(clean_texts[random])
 
-    checkpoint = "/home/santosh/projects/gui_deploy/trianed model v7/best_model.ckpt"
+    checkpoint = "/home/sant/projects/gui_deploy/latest_trained_model/best_model.ckpt"
+	
 
+ 
     loaded_graph = tf.Graph()
     with tf.Session(graph=loaded_graph) as sess:
     # Load saved model
